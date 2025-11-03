@@ -27,6 +27,7 @@ public class CategoryRepository
                     Description="Organização os elementos dentro de uma tabela",
                     Page = typeof(GridLayoutPage)
                 },
+                
             }            
         });
         return categories;
