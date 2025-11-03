@@ -7,18 +7,25 @@
 
     <Grid Margin="20" BackgroundColor="AliceBlue">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
             <RowDefinition Height="100" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
         </Grid.RowDefinitions>
 
-        <BoxView Color="RoyalBlue"/>
-        <Label Text="Label 001"/>
+        <BoxView Grid.Row="0" Grid.Column="0" Color="RoyalBlue" />       
+        <BoxView Grid.Row="0" Grid.Column="1" Color="ForestGreen" WidthRequest="50" />
+        <BoxView Grid.Row="0" Grid.Column="2" Color="GreenYellow" Grid.ColumnSpan="2" Grid.RowSpan="2" />        
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Orange" />
+        <BoxView Grid.Row="1" Grid.Column="1" Color="Red" />
+        <BoxView Grid.Row="2" Grid.ColumnSpan="4" Color="DimGrey" />
+
+
     </Grid>
 </ContentPage>
