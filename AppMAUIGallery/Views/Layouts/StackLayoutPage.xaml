@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Layouts.StackLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StackLayoutPage">
+
+    <StackLayout
+        Margin="16"
+        Padding="10"
+        BackgroundColor="AliceBlue"
+        Orientation="Vertical"
+        Spacing="10">
+
+        <Label FontAttributes="Bold" Text="Orientation: horizontal" />
+
+        <StackLayout
+            BackgroundColor="CornflowerBlue"
+            Orientation="Horizontal"
+            Spacing="10">
+            <Button HorizontalOptions="Start" Text="Button" />
+            <Button HorizontalOptions="Start" Text="Button" />
+        </StackLayout>
+
+        <Label
+            Padding="10"
+            FontAttributes="Bold"
+            Text="Vertical Stack Layout" />
+        <VerticalStackLayout BackgroundColor="DeepSkyBlue" Spacing="10">
+            <Label Text="Label 001" />
+            <Label Text="Label 002" />
+        </VerticalStackLayout>
+
+        <Label FontAttributes="Bold" Text="horizontal Stack Layout" />
+        <HorizontalStackLayout
+            Padding="10"
+            BackgroundColor="DodgerBlue"
+            Spacing="10">
+            <Label Text="Label 001" />
+            <Label Text="Label 002" />
+        </HorizontalStackLayout>
+
+        <Label FontAttributes="Bold" Text="w:200 h:100 horizontal:100" />
+        <Button
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            Text="Button"
+            WidthRequest="200" />
+    </StackLayout>
+</ContentPage>
