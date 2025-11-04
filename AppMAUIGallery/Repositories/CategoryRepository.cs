@@ -18,16 +18,21 @@ public class CategoryRepository
                 new Component
                 { 
                     Title = "Stacklayout",
-                    Description="Organização sequêncial dos elementos",
+                    Description="Organização sequêncial dos elementos.",
                     Page = typeof(StackLayoutPage)
                 },
                 new Component
                 { 
                     Title = "Grid",
-                    Description="Organização os elementos dentro de uma tabela",
+                    Description="Organização os elementos dentro de uma tabela.",
                     Page = typeof(GridLayoutPage)
                 },
-                
+                new Component
+                { 
+                    Title = "Absolutelayout",
+                    Description="Liberdade total para posicionar e dimensionar os elementos na tela.",
+                    Page = typeof(AbsoluteLayoutPage)
+                },
             }            
         });
         return categories;
