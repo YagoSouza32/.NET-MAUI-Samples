@@ -33,7 +33,13 @@ public class CategoryRepository
                     Description="Liberdade total para posicionar e dimensionar os elementos na tela.",
                     Page = typeof(AbsoluteLayoutPage)
                 },
-            }            
+                new Component
+                {
+                    Title = "Flexlayout",
+                    Description="Organização dos elementos de forma flexível, adaptando-se ao tamanho da tela.",
+                    Page = typeof(FlexLayoutPage)
+                }
+            }                    
         });
         return categories;
     }
