@@ -5,19 +5,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="FlexLayoutPage">
     
-    <FlexLayout Direction="Column" AlignItems="Start" Margin="20">
-
-        <Label Text="AlignSelf : Start" Margin="0,5"/>
-        <Label Text="Exemplo de label 001" FlexLayout.AlignSelf="Start" Padding="10" BackgroundColor="Green" />
+    <FlexLayout Direction="Row" AlignItems="Start" AlignContent="Start" JustifyContent="Start" Wrap="Wrap">
         
-        <Label Text="AlignSelf : Center" Margin="0,5"/>
-        <Label Text="Exemplo de label 002" FlexLayout.AlignSelf="Center" Padding="10" BackgroundColor="LawnGreen" />
+        <Label Text="label 2" FlexLayout.Order="0" FlexLayout.AlignSelf="Center" FlexLayout.Basis="20%" Padding="10" BackgroundColor="LawnGreen" />
+        <Label Text="label 1" FlexLayout.Order="1" FlexLayout.AlignSelf="Start" FlexLayout.Grow="1" Padding="10" BackgroundColor="Green" />
+        <Label Text="label 4" FlexLayout.Order="2" FlexLayout.AlignSelf="Stretch" FlexLayout.Grow="1" Padding="10" BackgroundColor="DarkSlateGray" TextColor="White" />
+        <Label Text="label 3" FlexLayout.Order="3" FlexLayout.AlignSelf="End" Padding="10" BackgroundColor="LimeGreen" />
+       
+        <Label Text="label 5" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 6" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 7" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 8" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 9a" FlexLayout.Shrink="0" Padding="10" BackgroundColor="LavenderBlush" />        
 
-        <Label Text="AlignSelf : End" Margin="0,5"/>
-        <Label Text="Exemplo de label 003" FlexLayout.AlignSelf="End" Padding="10" BackgroundColor="LimeGreen" />
-
-        <Label Text="AlignSelf : Stretch" Margin="0,5"/>
-        <Label Text="Exemplo de label 004" FlexLayout.AlignSelf="Stretch" Padding="10" BackgroundColor="DarkSlateGray" TextColor="White" />
     </FlexLayout>
     
 </ContentPage>
