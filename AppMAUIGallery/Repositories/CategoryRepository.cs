@@ -1,4 +1,5 @@
 ﻿using AppMAUIGallery.Models;
+using AppMAUIGallery.Views.Components.Mains;
 using AppMAUIGallery.Views.Layouts;
 
 namespace AppMAUIGallery.Repositories;
@@ -33,8 +34,28 @@ public class CategoryRepository
                     Description="Liberdade total para posicionar e dimensionar os elementos na tela.",
                     Page = typeof(AbsoluteLayoutPage)
                 },
-            }            
+                new Component
+                {
+                    Title = "Flexlayout",
+                    Description="Organização dos elementos de forma flexível, adaptando-se ao tamanho da tela.",
+                    Page = typeof(FlexLayoutPage)
+                }
+            }                    
         });
+
+        categories.Add(new Category
+        {
+            Name= "Componentes (Views)",
+            Components = new List<Component> { 
+                new Component
+                { 
+                    Title = "BoxView",
+                    Description="Um componente que cria uma caixa para apresentação",
+                    Page = typeof(BoxViewPage)
+                }               
+            }                    
+        });
+
         return categories;
     }
 }

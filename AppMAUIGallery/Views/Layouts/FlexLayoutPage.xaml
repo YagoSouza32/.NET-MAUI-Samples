@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Layouts.FlexLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexLayoutPage">
+    
+    <FlexLayout Direction="Row" AlignItems="Start" AlignContent="Start" JustifyContent="Start" Wrap="Wrap">
+        
+        <Label Text="label 2" FlexLayout.Order="0" FlexLayout.AlignSelf="Center" FlexLayout.Basis="20%" Padding="10" BackgroundColor="LawnGreen" />
+        <Label Text="label 1" FlexLayout.Order="1" FlexLayout.AlignSelf="Start" FlexLayout.Grow="1" Padding="10" BackgroundColor="Green" />
+        <Label Text="label 4" FlexLayout.Order="2" FlexLayout.AlignSelf="Stretch" FlexLayout.Grow="1" Padding="10" BackgroundColor="DarkSlateGray" TextColor="White" />
+        <Label Text="label 3" FlexLayout.Order="3" FlexLayout.AlignSelf="End" Padding="10" BackgroundColor="LimeGreen" />
+       
+        <Label Text="label 5" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 6" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 7" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 8" Padding="10" BackgroundColor="LavenderBlush" />        
+        <Label Text="label 9a" FlexLayout.Shrink="0" Padding="10" BackgroundColor="LavenderBlush" />        
+
+    </FlexLayout>
+    
+</ContentPage>
